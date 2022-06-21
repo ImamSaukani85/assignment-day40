@@ -47,18 +47,22 @@ function PostSection() {
       <div className="card-body">
         <div className="form-group">
           <input
+            data-testid="test-title"
             type="text"
             className="form-control"
             onChange={(e) => setTitle(e.target.value)}
             placeholder="Title"
+            value={title}
           />
         </div>
         <div className="form-group">
           <input
+            data-testid="test-desc"
             type="text"
             className="form-control"
             onChange={(e) => setDescription(e.target.value)}
             placeholder="Description"
+            value={description}
           />
         </div>
         <button className="btn btn-sm btn-primary" onClick={postData}>
